@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/signRegister.css" />
+    <title>Sign in</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/ebay.png" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <div class="signReg d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h1>Hello</h1>
+            <p class="fs-6 mb-4">Sign in to eBay or <a href="register.html">create an account</a></p>
+            <input type="text" placeholder=" Email" id="mail" style="margin-bottom: 20px;" pattern="[a-z]{3,}[0-9]*@[a-z]{3,}(.com|.eg|.net)"/><br>
+            <input type="password" placeholder=" Password" class="" id="pass"/><br />
+            <span id="invalid" style="color: red;"></span><br>
+            <a
+              class="btn btn-primary rounded-pill btn-fluid main-btn mt-4 p-2"
+              href="#" onclick="signInUser()"
+              >Sign in</a
+            >
+            
+          </div>
+          <div id="social-signin-wrapper-separator" class="separator-content animate"><mark>or</mark></div>
+          <div class="col-xs-12 text-center">
+              <a
+                class="btn btn-primary btnFace rounded-pill btn-fluid main-btn mt-4 p-2"
+                href="https://www.facebook.com"
+                ><i
+                  class="fab fa-facebook-square fa-2x"
+                ></i>
+                Continue with Facebook</a
+              >
+            </div>
+          <div class="col-xs-12 text-center">
+            <a
+              class="btn btnSign rounded-pill btn-fluid main-btn mt-4 p-2"
+              href="https://accounts.google.com"
+              ><img
+                src="images/google.png"
+                alt=""
+                width="25px"
+                style="float: left; margin-left: 10px"
+              />
+              Continue with Google</a
+            >
+          </div>
+          <div class="col-xs-12 text-center">
+            <a
+              class="btn btnSign rounded-pill btn-fluid main-btn mt-4 p-2"
+              href="https://appleid.apple.com"
+              ><i
+                class="fab fa-apple fa-2x"
+                style="float: left; margin-left: 10px; margin-top: -4px "
+              ></i
+              ><p>Continue with Apple</p></a
+            >
+          </div>
+          <div class="col-xs-12 text-center mt-4 mb-2" style="display: inline">
+            <input type="checkbox" name="stay" onchange="checkRememberMe()" id="check" />
+            <label for="stay">Stay signed in</label>
+          </div>
+
+
+          <!--footer-->
+          <div class="col-xs-12 text-center">
+            <p style="font-size: 14px; color: black">
+              Using a public or shared device?<br />
+              Uncheck to protect your account.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              Copyright © 1995-2023 eBay Inc. All Rights Reserved.
+              Accessibility, User Agreement, Privacy, Payments Terms of Use,
+              Cookies, Your Privacy Choices and AdChoice
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/signin.js">
+      
+    </script>
+  </body>
+</html>

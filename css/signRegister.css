@@ -1,0 +1,121 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: "Market Sans", Arial, sans-serif;
+}
+
+.navbar img{
+    width: 100px;
+}
+.signReg h1{
+    font-weight: bold;
+}
+.signReg input{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #ddd;
+    background-color: #f7f7f7;
+}
+.signReg input:focus {
+    background-color: white;
+}
+
+.signReg .btn{
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px;
+}
+.separator-content {
+    position: relative;
+    top: 13px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 0px;
+}
+content.animate {
+    animation: 1s slide-from-left;
+}
+.separator-content mark {
+    background-color: #FFF;
+    padding: 0 4px;
+}
+
+.signReg .btnFace{
+    background-color: #4267b2;
+    border-color: #4267b2;
+    /* border-top: 1px solid #ddd; */
+}
+.signReg .btnFace:hover{
+    background-color: #10299c;
+    border-color: #10299c;
+}
+.signReg .btnSign {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.signReg #check{
+    width: 15px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/*footer*/
+.footer{
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.footer p{
+    font-size: 12px;
+
+}
+
+
+/* register */
+form input{
+    margin: 5px;
+}
+.signReg{
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+.btnFace svg{
+    float: left;
+    margin-left: 10px;
+    margin-top: -3px;
+}
+.signReg .nameInp {
+    width: 140px;
+}
+.signReg .regInp{
+    width: 300px;
+}
+.signReg .btnCreate{
+    width: 300px;
+    background-color: #1a5fe8;
+    border-color: #4267b2;
+    margin-left: 170px;
+
+}
+.signReg .pCreate{
+    margin-left: 170px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.signReg .btnCreate:hover {
+    background-color: #10299c;
+    border-color: #10299c;
+}
+.formInp{
+    border-right: 1px solid #ddd;
+}

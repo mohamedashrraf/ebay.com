@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/check.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="checkOutDiv">
+      <div id="MoutF">
+        <div id="CoutF">
+          <a href="home.html">
+            <img
+              width="120"
+              height="50"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png"
+              alt="eBay Home"
+            />
+          </a>
+          <p>Checkout</p>
+        </div>
+        <p>How do you like our checkout? <a href="">Give us feedback</a></p>
+      </div>
+      <!-- showing data -->
+      <div id="cMain">
+        <div id="cMainLeft">
+          <div id="yesC">
+            <p id="Pr">Review items and shipping</p>
+            <p id="Sn">Seller : eBay</p>
+            <div id="cmLeft">
+              <table>
+                <thead></thead>
+                <tbody id="tB11"></tbody>
+              </table>
+            </div>
+          </div>
+          <!--payment ways -->
+          <div id="payCa">
+            <p id="PTa">Pay with</p>
+            <div id="cardsDiv" onclick="openCard()">
+              <div id="cardS">
+                <input type="checkbox" id="checkOn" />
+                <div id="Cards1">
+                  <p class="Ap">Add new card</p>
+                  <div id="CardI">
+                    <div class="yesAc">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="yesAc">
+                      <img
+                        src="https://vectorlogo4u.com/wp-content/uploads/2020/10/mastercard-logo-01.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="yesAc">
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToh2UtL5QUUFU0oAtU-Oss9T4J6zIUcdrvv4bWfcc0Howun6YS6Mj8XAnbLBNWjfVxQy8&usqp=CAU"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="DownR"><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="cardOps">
+              <div id="cardOps1">
+                <i class="fas fa-lock"></i>
+                <p>
+                  Your Payment is secure your Card detail will not share with
+                  seller
+                </p>
+              </div>
+              <div id="addB1">
+                <input id="cardNumber" type="text" placeholder="Card Number" />
+                <input id="valid" type="text" placeholder="Valid Thru" />
+                <input id="cvv" type="text" placeholder="Cvv" />
+              </div>
+              <div id="addB2">
+                <input id="first" type="text" placeholder="First name" />
+                <input id="last" type="text" placeholder="Last name" />
+              </div>
+              <button id="doneBtn" onclick="done()">Done</button>
+              <button id="canBtn">Cancel</button>
+            </div>
+            <div id="otp11">
+              <input id="yesOTP" type="number" placeholder="Enter OTP" />
+              <button id="submit" onclick="submitFun()">Submit</button>
+            </div>
+            <div id="payPal">
+              <div id="payPal1">
+                <input type="checkbox" name="" />
+                <div>
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcT5ACBaHFS40ZWYv_tuN5ZMwV-cNkEPybj93JqEW_vqxUMv5rn257x_HR_sEi97zFub8&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div id="DownR"><i class="fas fa-angle-down"></i></div>
+            </div>
+            <div id="CashOn">
+              <div>
+                <input type="checkbox" />
+                <p>Cash on Delivery</p>
+              </div>
+              <div id="DownR"><i class="fas fa-angle-down"></i></div>
+            </div>
+          </div>
+        </div>
+        <div id="cMainRight">
+          <div id="csO">
+            <p>Subtotal US $</p>
+            <span></span>
+            <p id="Subtotal">11.00</p>
+          </div>
+          <div id="csS">
+            <p>Shipping</p>
+            <p>Free</p>
+          </div>
+          <hr />
+          <div id="csO">
+            <p>Order Total US $</p>
+            <span></span>
+            <p id="orderTotal">11.00</p>
+          </div>
+          <div id="csC" onclick="yesConfirm()">Confirm and Pay</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let checkoutPrice = localStorage.getItem("totalPrice");
+      console.log(checkoutPrice);
+      document.getElementById("Subtotal").textContent = checkoutPrice;
+      document.getElementById("orderTotal").textContent = checkoutPrice;
+
+      // checkout()
+    </script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

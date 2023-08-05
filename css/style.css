@@ -1,0 +1,69 @@
+body {
+    font-family: "Helvetica neue", Helvetica, Verdana, Sans-serif;
+    ;
+}
+
+#cartContaier {
+    background-color: white;
+    border: none;
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: #100e0f;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.productImg {
+    width: 100%;
+    height: 50%;
+
+}
+
+.carousel-inner {
+    background-color: ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Cost {
+    font-weight: bold;
+}
+
+.shippingCost {
+    color: gray;
+    font-size: 14px;
+}
+
+#linkDecor a {
+    font-size: 10px;
+}
+
+.vertical-line {
+    border-left: 1px solid rgb(85, 70, 70);
+    height: 5px;
+    margin: 0 3px 0 3px;
+}
+
+#shoeSize {
+    margin: 2% 0 2% 0;
+}
+
+#shoeColor {
+    margin: 0 0 2% 0;
+}
+
+#sheoQ {
+    width: 100%;
+}

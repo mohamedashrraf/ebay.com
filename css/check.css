@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 5;
+    margin: 5;
+}
+
+#checkOutDiv {
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+}
+
+#ebayLogC {
+    width: 120px;
+    height: 90px;
+}
+
+#MoutF {
+    display: flex;
+    justify-content: space-around;
+}
+
+#CoutF {
+    display: flex;
+    align-items: center;
+    margin-top: -14px;
+    margin-left: 20px;
+}
+
+#MoutF>p {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#CoutF>p {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+}
+
+#cMain {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cMainLeft {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#yesC {
+    border: 1px solid rgb(212, 212, 212);
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#cMainRight {
+    width: 35%;
+    border: 1px solid rgb(192, 192, 192);
+    height: 230px;
+    position: sticky;
+    top: 0;
+}
+
+#cmLeft {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#cmLeft>div {
+    margin-left: 20px;
+}
+
+#CoutImg {
+    width: 20%;
+    height: 50%;
+}
+
+#Pr {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#Sn {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #808080;
+    font-size: 17px;
+}
+
+#CoutImg>div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#cTitle {
+    font-size: 18px;
+}
+
+#cPrice {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+#qtyS {
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+#rQ {
+    margin-top: -54px;
+    font-size: 13px;
+    margin-left: 18px;
+}
+
+#Dc {
+    margin-top: 55px;
+    margin-bottom: 10px;
+
+}
+
+.cCs {
+    color: #808080;
+    font-size: 14px;
+
+}
+
+.cC {
+    color: #808080;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+
+#cInput {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+#Ac {
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+#selectAc {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#addC1 {
+    margin-top: 10px;
+}
+
+#firstName {
+    width: 290px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#lastName {
+    width: 290px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: .5px solid black;
+}
+
+#addC2 {
+    margin-top: 10px;
+}
+
+#streetA1 {
+    width: 290px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+
+}
+
+#streetA2 {
+    width: 290px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: .5px solid black;
+
+}
+
+#addC3 {
+    margin-top: 10px;
+}
+
+#cityName {
+    width: 185px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+
+}
+
+#stateName {
+    width: 185px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    border: .5px solid black;
+
+}
+
+#zipCode {
+    width: 185px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    border: .5px solid black;
+
+}
+
+#addC4 {
+    margin-top: 10px;
+}
+
+#email {
+    width: 290px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#confirmEmail {
+    width: 290px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: .5px solid black;
+
+}
+
+#addC5 {
+    margin-top: 10px;
+}
+
+#selectCon {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+#mobile {
+    width: 290px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: .5px solid black;
+}
+
+#shipC {
+    margin-top: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#otp11 {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+#yesOTP {
+    width: 150px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid rgb(150, 148, 148);
+    padding-left: 10px;
+
+}
+
+#submit {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: #3665F3;
+    color: white;
+}
+
+#addC {
+    margin-left: 10px;
+    border-top: 1px solid #808080;
+    padding-top: 10px;
+}
+
+#shipAn {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#cDone {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3665F3;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#hiddenAdd {
+    /* display: none; */
+    padding: 5px 10px;
+    border: 1px solid rgb(201, 200, 200);
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    display: none;
+
+}
+
+#hiddenAdd>p:nth-child(1) {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#Subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+#Subtotal>p {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+#Subtotal>span {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+#csS {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#csS>p {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#csO {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#csO>p {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#csC {
+    width: 240px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #3665F3;
+    margin-top: 50px;
+}
+
+#cardS {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#CardI {
+    display: flex;
+    justify-content: center;
+}
+
+.yesAc>img {
+    width: 30px;
+    height: 20px;
+}
+
+#cardsDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    border-top: 1px solid #bdbaba;
+    border-bottom: 1px solid #d1cccc;
+}
+
+#CashOn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#CashOn>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#CashOn>div>p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+#DownR {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+#PTa {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#payCa {
+    border: 1px solid rgb(212, 212, 212);
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+#payPal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d1cccc;
+    margin: auto;
+}
+
+#payPal>div img {
+    width: 60px;
+    height: 30px;
+}
+
+#payPal1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#payPal1>input {
+    margin-right: 10px;
+}
+
+#cardOps1 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#cardOps {
+    display: none;
+}
+
+#addB1 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#cardNumber {
+    width: 220px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#valid {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#cvv {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#addB2 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#first {
+    width: 290px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#last {
+    width: 290px;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: .5px solid black;
+}
+
+#doneBtn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3665F3;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#canBtn {
+    padding: 10px 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid #a7a1a1;
+
+}
+
+
+
+
+/*--------for fine print----------*/
+
+#wait01 {
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wait01>img {
+    width: 600px;
+    height: 500px;
+    margin-top: 0px;
+    margin-left: -20px;
+}
+
+
+#count {
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+#completeForm {
+    border: 1px solid rgb(204, 200, 200);
+    width: 30%;
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+    display: none;
+    margin-top: 70px;
+}
+
+#nameDiv {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d1cccc;
+    margin-top: 10px;
+}
+
+#nameDiv>p {
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 500px
+}
+
+#itemDiv {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d1cccc;
+}
+
+#itemDiv>p {
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 500px
+}
+
+#totalDiv {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d1cccc;
+}
+
+#totalDiv>p {
+    margin: 10px 10px 10px 10px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+#thankDiv {
+    text-align: center;
+    margin: auto;
+}
+
+#thankP {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#orderNo {
+    font-weight: 900;
+}
+
+#conB {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#continueS {
+    padding: 12px 25px;
+    border-radius: 20px;
+    background-color: #3665F3;
+    border: none;
+    color: white;
+    font-weight: 600;
+}

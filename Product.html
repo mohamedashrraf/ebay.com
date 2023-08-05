@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--for internet explorer compatiblity-->
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <title>Product</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png">
+    <!-- nav bar style -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+
+    <!--IE understanding html5 tags-->
+    <script src="js/html5shiv.min.js"></script>
+    <!--Responsive-->
+    <script src="js/respond.min.js"></script>
+
+    <!-- nav bar scripts style -->
+    <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
+    <script src="js/all.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <nav class="navbar navbar-expand-lg p-0 m-0 text-dark color-black  ">
+                <div class="container">
+                    <div class="hi">
+                        <span class="nav-link">Hi!</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                        aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+
+                    <!-- list of items -->
+
+                    <div class="collapse navbar-collapse" id="main">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+
+                            <li class="nav-item ">
+                                <a class="nav-link p-1 ps-2 pe-0 link-primary link-offset-0  text-decoration-underline"
+                                    aria-current="page" href="signin.html">Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link p-1  text-dark">or</span>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link  p-1  ps-0 pe-2 link-primary link-offset-0  text-decoration-underline"
+                                    href="register.html">register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-1 ps-2 pe-2  text-dark" href="#">Daily Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  p-1 ps-2 pe-2 text-dark" href="https://www.ebay.com/help/home">
+                                    Help
+                                    & Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto mb-0 mb-lg-0 ">
+
+                            <li class="nav-item ">
+                                <a class="nav-link  p-1 ps-2 pe-2  text-dark" href="#"> Ship to
+                                </a>
+                            <li class="nav-item">
+                                <a class="nav-link  p-1 ps-2 pe-2  text-dark " href="https://www.ebay.com/sl/sell">
+                                    Sell
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle  p-1 ps-3 pe-3 text-dark" href="#" role="button"
+                                    data-bs-toggle="" aria-expanded="false">Washlist</a>
+                                <ul class="dropdown-menu" role="navigation">
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle  p-1 ps-3 pe-3 text-dark" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">My eBay</a>
+                                <ul class="dropdown-menu" role="navigation">
+
+                                    <li><a class="dropdown-item " href="https://www.ebay.com/help/home">Summary</a>
+                                    </li>
+                                    <li><a class="dropdown-item " href="#">Recently Viewed</a></li>
+                                    <li><a class="dropdown-item " href="#">Bids/Offers</a></li>
+                                    <li><a class="dropdown-item " href="#">Watchlist</a></li>
+                                    <li><a class="dropdown-item " href="#">Purchase History</a></li>
+                                    <li><a class="dropdown-item " href="#">Buy Again</a></li>
+                                    <li><a class="dropdown-item " href="#">Selling</a></li>
+                                    <li><a class="dropdown-item " href="#">Saved Searches</a></li>
+                                    <li><a class="dropdown-item " href="#">Saved Sellers</a></li>
+                                    <li><a class="dropdown-item " href="#">Message</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <div class="notification ps-3 pe-3 fa-lg text-dark">
+                            <i class="fa-regular fa-bell fa-lg "></i>
+                            <div id="notification-box">
+                                <p>Please <a href="signin.html">Sign in </a> to view notifications</p>
+                            </div>
+                        </div>
+                        <button class="cart ps-3 pe-3 fa-lg text-dark" id="cartContaier"
+                            onclick="location.href='cart.html'">
+                            <span class="dot" id="cartNotification"></span>
+                            <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            <div id="cart-box">
+
+                                <p style="font-size: large;font-weight: 300;">Your cart is empty</p><br>
+                                <h6 style="font-size: small;color: #7f7c7c;;padding-top: 0%;"> Time to start
+                                    shopping!
+                                </h6>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+        <hr class="div-divider2 pt-0 pb-0 mt-0 mb-0  ">
+
+        <!-- End of Top navbar  -->
+
+        <!-- Second Navbar -->
+        <div class="mid-navbar navbar-expand-lg">
+            <div class="img-logo" id="img-logo">
+                <a href="home.html">
+            <img
+              width="120"
+              height="50"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png"
+              alt="eBay Home"
+            />
+          </a>
+            </div>
+            <div class="dropdown-category ">
+                <p class="dropdown-toggle  p-3 ps-3 pe-3 text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Shop by category </p>
+
+
+                <ul class="dropdown-menu" role="navigation" id="category-box">
+
+
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+                    <li><a class="dropdown-item " href="">
+                            <h6>Collectibles and Art</h6>
+                        </a></li>
+                    <li><a class="dropdown-item " href="#">Collectibles</a></li>
+                    <li><a class="dropdown-item " href="#">Antiques</a></li>
+
+                </ul>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass " style="margin: 12px;"></i>
+                <input type="text" name="" id="textInput">
+                <div class="btn-allcategory">
+                    <button name="" id="btnallcategory">
+                        All Categories
+                        <i class="fa-solid fa-angle-down m-0 p-0 "></i>
+                    </button>
+
+                </div>
+            </div>
+            <button class="search-btn" type="submit" onclick="searchProducts()">Search</button>
+            <a title="Advanced Search" href="https://www.ebay.com/sch/ebayadvsearch" aria-label="Advanced Search"
+                _sp="m570.l2614" id="advanced-link"
+                style="margin: 5px; font-size: 11px ;padding: 10px; color: #767676;">Advanced</a>
+        </div>
+
+        <hr class="div-divider pt-0 pb-0 mt-0 mb-0  " style="margin-left: 100px;margin-right: 100px;">
+        <!--End of Second Navbar -->
+        <!-- Third Navbar -->
+
+        <hr class="div-divider pt-0 pb-0 mt-0 mb-0  " style="margin-left: 100px;margin-right: 100px;">
+        <!-- End of Third Navbar  -->
+
+    </header>
+
+    </header>
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4917555057584726"
+        crossorigin="anonymous"></script>
+    
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4917555057584726" data-ad-slot="5092526767"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>-->
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="m-3">People who viewed this item also viewed</h3>
+            </div>
+        </div>
+        <div class="row" style="border-bottom: rgb(206, 202, 202) solid 1px; height: 150px;">
+            <div class="col-lg-3" style="display: flex;">
+                <div style="float: left;">
+                    <a href="#">
+                        <img class="productImg" src="images/upShoes.jpg">
+                    </a>
+                </div>
+                <div style="float: right;">
+                    <a href="#">
+                        PUMA Men's Redon Bungee Shoes
+                    </a>
+                    <p class="Cost">
+                        32$
+                    </p>
+                    <div class="shippingCost">
+                        + US 12$ shipping
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="display: flex;">
+                <div style="float: left;">
+                    <a href="#">
+                        <img class="productImg" src="images/sideShoes.jpg">
+                    </a>
+                </div>
+                <div style="float: right;">
+                    <a href="#">
+                        PUMA Men's Redon Bungee Shoes
+                    </a>
+                    <p class="Cost">
+                        32$
+                    </p>
+                    <div class="shippingCost">
+                        + US 12$ shipping
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="display: flex;">
+                <div style="float: left;">
+                    <a href="#">
+                        <img class="productImg" src="images/right shoe.jpg">
+                    </a>
+                </div>
+                <div style="float: right;">
+                    <a href="#">
+                        PUMA Men's Redon Bungee Shoes
+                    </a>
+                    <p class="Cost">
+                        32$
+                    </p>
+                    <div class="shippingCost">
+                        + US 12$ shipping
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="display: flex;">
+                <div style="float: left;">
+                    <a href="#">
+                        <img class="productImg" src="images/lift shoe.jpg">
+                    </a>
+                </div>
+                <div style="float: right;">
+                    <a href="#">
+                        PUMA Men's Redon Bungee Shoes
+                    </a>
+                    <p class="Cost">
+                        32$
+                    </p>
+                    <div class="shippingCost">
+                        + US 12$ shipping
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                <path
+                    d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+            </svg>
+            <span style="font-weight: bold;">SAVE UP TO</span>
+            <span id="percentage" style="color: red;">60%</span>
+            <a href="#" style="font-size: 11px;">See all eligible items and terms</a>
+        </div>
+
+
+
+        <!----------------------------------- Start of product container ------------------------------------->
+
+
+
+        <div class="container">
+            <div class="row">
+                <!-----------------------------------product Image ------------------------------------->
+                <div class="col-lg-4 ">
+                    <div id="" class="carousel slide" data-bs-ride="carousel "
+                        style="border: 1px rgb(110, 100, 100) solid; text-align: center; ">
+
+                        <!-- picture of products appended here -->
+                        <div class="carousel-inner p-1">
+                            <div class="carousel-item active">
+                                <img src="" class="  " alt="..." id="productImage" width="300px" height="300px">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productImage"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                style="background-color: rgb(178, 189, 189); "></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productImage"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                style="background-color: rgb(178, 189, 189); "></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-----------------------------------Fixed ------------------------------------->
+
+                    <div class="row" style="border-bottom: 1px rgb(206, 202, 202) solid ;">
+                        <h5 id="title"></h5>
+                        <p style="color: red; font-size: 12px; font-weight: bold;"> <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-fire"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                            </svg> 16 sold in last 24 hours</p>
+                    </div>
+
+                    <!-----------------------------------Fixed ------------------------------------->
+
+                    <div class="row" style="border-bottom: 1px rgb(206, 202, 202) solid ;font-size: 15px;">
+                        <div class="col-lg-4" style="padding:  0;">
+                            <div class="row">
+                                <div>Condition: </div>
+                            </div>
+                            <div class="row">
+                                <label for="shoeSize">Select :</label>
+                            </div>
+                            <div class="row">
+                                <label for="shoeColor">Color:</label>
+                            </div>
+
+                            <div class="row pt-3">
+                                <label for="sheoQ">Quantity:</label>
+                            </div>
+                        </div>
+                        <!-----------------------------------Fixed ------------------------------------->
+
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div style="font-weight: bold;">New with box</div>
+                            </div>
+                            <div class="row">
+                                <select id="shoeSize">
+                                    <option selected>-Select-</option>
+                                    <option value="1">7</option>
+                                    <option value="2">7.5</option>
+                                    <option value="3">8</option>
+                                    <option value="4">8.5</option>
+                                    <option value="5">9</option>
+                                    <option value="6">9.5</option>
+                                    <option value="7">10</option>
+                                    <option value="8">10.5</option>
+                                    <option value="9">11</option>
+                                    <option value="10">11.5</option>
+                                    <option value="11">12</option>
+                                    <option value="12">12.5</option>
+                                    <option value="13">13</option>
+                                    <option value="14">13.5</option>
+                                    <option value="15">14</option>
+                                </select>
+                            </div>
+                            <!------------------------------Fixed ------------------------------------->
+
+                            <div class="row">
+                                <select id="shoeColor">
+                                    <option selected>-Select-</option>
+                                    <option value="1">Black - Black/White/High Risk Red</option>
+                                    <option value="2">White - White/White/Black</option>
+                                </select>
+                            </div>
+                            <!-----------------------------------Fixed ------------------------------------->
+
+                            <div class="row">
+                                <div class="col-lg-2" style="padding:  0; margin-bottom: 3%;">
+                                    <input type="text" value="1" id="prodQuantity" style="width: 50px; height: 30px;">
+                                </div>
+                                <div class="col-lg-10 pt-1">
+                                    <span>More than 10 available / 7,772 sold </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-----------------------------------price ------------------------------------->
+
+                        <div class="col-lg-2" style="padding:  0; margin-bottom: 3%;">
+                            <span>Price: </span>
+                        </div>
+
+                        <div class="col-lg-4 mt-3">
+                            <div class="row">
+                                <h5 id="price"
+                                    style="font-size: 22px;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ">
+                                </h5>
+                            </div>
+                            <div class="row">
+                                <p>Save US $33.01 (55% off)</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <!-----------------------------------Buy Now ------------------------------------->
+
+                            <div class="row">
+                                <button class="btn btn-primary active rounded-pill mt-3 " onclick='buyNowBtn()'
+                                    style="width: 100%; text-align: center; margin-bottom: 2%;font-family: Skin-market-sans; background-color: #0053a0;">
+                                    Buy it Now</button>
+                            </div>
+                            <!-----------------------------------Add to Cart ------------------------------------->
+
+                            <div class="row">
+                                <!-- <button class="btn btn-primary rounded-pill  " onclick='addCart()'
+                                    style="width: 100%; text-align: center; margin-bottom: 2%; font-family: Skin-market-sans; ">Add
+                                    to Cart</button> -->
+                                <!-- try 2 -->
+                                <button class="btn btn-primary rounded-pill  " id='addCart'
+                                    style="width: 100%; text-align: center; margin-bottom: 2%; font-family: Skin-market-sans; ">Add
+                                    to Cart</button>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-outline-primary rounded-pill"
+                                    style="width: 100%; text-align: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                    Add to watchlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ------------------------------Right Columns Fixed------------------------------ -->
+
+                <div class="col-lg-4 ">
+                    <div id="shopC"
+                        style="border: solid 1px #ccc;border-radius: 8px;margin-bottom: 10px; padding: 15px; font-size: 14px;">
+
+                        <p id="spA">Shop with confidence</p>
+                        <h4>eBay Money Back Guaurantee</h4>
+                        <p>Get the item you ordered or get your money back.</p>
+                        <a href="">Learn More</a>
+                    </div>
+
+                    <div id="sellerInfo"
+                        style="border: solid 1px #ccc;border-radius: 8px;margin-bottom: 10px; padding: 15px; font-size: 14px;">
+                        <h2 style="font-size: 14px; margin: 1px; padding: 1px;">Seller information</h2>
+                        <p style="font-size: 14px; margin: 1px; padding: 1px;">clucth665(839)</p>
+                        <p style="font-size: 14px; margin: 1px; padding: 1px;">99.7% Positive feedback</p>
+                        <p>----------------------------------------------</p>
+                        <div id="Si" style="font-size: 14px; margin: 1px; padding: 1px;">
+                            <img id="cLove"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAA/hJREFUSA21ll1oXEUUx+fM3uzeTVLbopJWqdSHQCERwQ/UCrFrdyNixQSzm02pRoog+CKID7ZY7IPgB75IBG2fKsZ2k4200NbUZDcb+yAV8UFEfGjB4INt8cGITTZ39849/s9Npmw3aZq268ByZuac8//dM3dm7pKqa7H05HNMvIeYtjNzGxHNIuS8UnS8SUW/vJLv+qs2pTV99u6qqrykFPdivh05G5BzGRrfQ2PYy6dO18aTHbSkS5t85eeQ8JSdW25plhS97Y0lD4kv1ld4jRV/ANiG5bGLM4B/5ygnO5dPXJKZELgE+wGw+xTRFUX8foTpbMu6+M/l8kJzNeDHyTDE1bOLSfSxWMDeWhyrcY7QoSZN5+Jxd37u3/KDhrhLMe1TzK2A/gHoYwINgVjG6bAyoh91xMks5BIzIlTf4n2FrKHgC5CioY9UJcJ6sDyWzNXHytjNlrYGxh8F9FGpFMu7g8J3xnxKKgPsgevBrGAsU3ye2ZyQMVGkxxvdedL6VrJL0F+WKt2lZYOEgVjGG8EkTgBYljfldyOYxIea0Ja+sJxwN2KN5J3J5Fqal+/+ZC1xNka0DRjC0nh3beKQDWIDGm2ttrA0luYfAcx51fWNBlk9q42NM6ux1X8XR1D1O2xAo63VRoUzGifxGwFwoAYbDbJ6V7XB0tSkjgEa4I2+KFvYBjXKhprQFgappqPaO9p9Hvv1iBxmNv7njQJZnVBTLgowvHzighaH4/ABPMHfWONn3L6JV23w7VrREk3RdtzYO6IXAudz3X8q0ntlIlDq03hm6knp306LZ4vbRSvUgPb8cNdF6YdA6VRGkydIq4/QjRn2T7b2lzpl/laa5Bpj5MqLiaZoW53w8rYDlI+7tfAV9uwAzsxl1ipRGUn9Zv1rsdGB0jbyffkYtKGcnDeS2g0tnL7FdrVCGYqjne55BU8xLgkUqNLNVNo6MNVhYdA60873DtbChHENUCZ+zXdUtmy+v1cSBFox/nRzeuph8a3WmvuLD1V9E1aG3G+3bNraI1r1OcuAEnBhqN2TBHzdT2F57/TZlNzs5I76ZDt2M8UuPzAlPOBdgJ3e3OL0iIb119oVgRIgCU90OvifQscAXRcYNR7tn3yhNln6sf7CroCDMzjHd+CdjHRu3Ng7cySxUB9nx9cFSsD0wYS/vzO5B0/9GT6grgr4azczudcmu5nCIBs+Dl8cMYf3dyR3/3T4kar1r2Sv2aUrBdg5gA4GAb8bjon2IdEwqw9RPWlN7y2Mpg7Y2NXsmoEign9przMFQ1i+pZXBJ1WpN7yx1NBqkFrfTQElMdo3kcZVNSz9iNIvl/PJEen/r81NF592sxM7bwXyH8fitetAhvOzAAAAAElFTkSuQmCC"
+                                alt="">
+                            <a href="">
+                                <p style="font-size: 14px; margin: 1px; padding: 1px;">Save this Seller</p>
+                            </a>
+                        </div>
+                        <a href="">
+                            <p style="font-size: 14px; margin: 1px; padding: 1px;">Contact Seller</p>
+                        </a>
+                        <a href="">
+                            <p style="font-size: 14px; margin: 1px; padding: 1px;">Visit Store</p>
+                        </a>
+                        <a href="">
+                            <p style="font-size: 14px; margin: 1px; padding: 1px;">See other items</p>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+
+    </script>
+    <script src="js/search.js"></script>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

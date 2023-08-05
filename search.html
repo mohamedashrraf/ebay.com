@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Buy &amp; sell electronics, cars, clothes, collectibles &amp; more on eBay, the world's online marketplace. Top brands, low prices &amp; free shipping on many items."
+    />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Search</title>
+
+    <style>
+      .results ul li {
+        list-style-type: none;
+        padding: 1%;
+        border: solid 1px rgb(209, 204, 204);
+        margin: 2px;
+        width: 50%;
+        transition:all 0.5 ease-in-out;
+      }
+      .results ul li:hover {
+        cursor: pointer;
+        background-color: #f8f9fa;
+        color: white;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-navbar">
+        <nav class="navbar navbar-expand-lg p-0 m-0 text-dark color-black">
+          <div class="container">
+            <div class="hi">
+              <span class="nav-link">Hi!</span>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#main"
+              aria-controls="main"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- list of items -->
+
+            <div class="collapse navbar-collapse" id="main">
+              <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-1 ps-2 pe-0 link-primary link-offset-0 text-decoration-underline"
+                    aria-current="page"
+                    href="signin.html"
+                    >Sign in</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <span class="nav-link p-1 text-dark">or</span>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-1 ps-0 pe-2 link-primary link-offset-0 text-decoration-underline"
+                    href="register.html"
+                    >register</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link p-1 ps-2 pe-2 text-dark" href="#"
+                    >Daily Deals</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-1 ps-2 pe-2 text-dark"
+                    href="https://www.ebay.com/help/home"
+                  >
+                    Help & Contact</a
+                  >
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link p-1 ps-2 pe-2 text-dark" href="#">
+                    Ship to
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link p-1 ps-2 pe-2 text-dark"
+                    href="https://www.ebay.com/sl/sell"
+                  >
+                    Sell
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle p-1 ps-3 pe-3 text-dark"
+                    href="#"
+                    role="button"
+                    data-bs-toggle=""
+                    aria-expanded="false"
+                    >Washlist</a
+                  >
+                  <ul class="dropdown-menu" role="navigation"></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle p-1 ps-3 pe-3 text-dark"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >My eBay</a
+                  >
+                  <ul class="dropdown-menu" role="navigation">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.ebay.com/help/home"
+                        >Summary</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Recently Viewed</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Bids/Offers</a></li>
+                    <li><a class="dropdown-item" href="#">Watchlist</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Purchase History</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Buy Again</a></li>
+                    <li><a class="dropdown-item" href="#">Selling</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Saved Searches</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Saved Sellers</a></li>
+                    <li><a class="dropdown-item" href="#">Message</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="notification ps-3 pe-3 fa-lg text-dark">
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <div id="notification-box">
+                  <p>
+                    Please <a href="signin.html">Sign in </a> to view
+                    notifications
+                  </p>
+                </div>
+              </div>
+              <div class="cart ps-3 pe-3 fa-lg text-dark">
+                <a href="cart.html" style="color: black"
+                  ><i class="fa-solid fa-cart-shopping fa-lg"></i
+                ></a>
+                <div id="cart-box">
+                  <p style="font-size: large; font-weight: 300">
+                    Your cart is empty
+                  </p>
+                  <br />
+                  <h6 style="font-size: small; color: #7f7c7c; padding-top: 0%">
+                    Time to start shopping!
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <hr class="div-divider2 pt-0 pb-0 mt-0 mb-0" />
+
+      <!-- End of Top navbar  -->
+
+      <!-- Second Navbar -->
+      <div class="mid-navbar navbar-expand-lg">
+        <div class="img-logo" id="img-logo">
+          <a href="home.html">
+            <img
+              width="120"
+              height="50"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2560px-EBay_logo.svg.png"
+              alt="eBay Home"
+            />
+          </a>
+        </div>
+        <div class="dropdown-category">
+          <p
+            class="dropdown-toggle p-3 ps-3 pe-3 text-dark"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Shop by category
+          </p>
+
+          <ul class="dropdown-menu" role="navigation" id="category-box">
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+            <li>
+              <a class="dropdown-item" href="">
+                <h6>Collectibles and Art</h6>
+              </a>
+            </li>
+            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Antiques</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass" style="margin: 12px"></i>
+          <input type="text" name="" id="textInput" />
+          <div class="btn-allcategory">
+            <button name="" id="btnallcategory">
+              All Categories
+              <i class="fa-solid fa-angle-down m-0 p-0"></i>
+            </button>
+          </div>
+        </div>
+        <button class="search-btn" type="submit" onclick="searchProducts()">
+          Search
+        </button>
+        <a
+          title="Advanced Search"
+          href="https://www.ebay.com/sch/ebayadvsearch"
+          aria-label="Advanced Search"
+          _sp="m570.l2614"
+          id="advanced-link"
+          style="margin: 5px; font-size: 11px; padding: 10px; color: #767676"
+          >Advanced</a
+        >
+      </div>
+
+      <hr
+        class="div-divider pt-0 pb-0 mt-0 mb-0"
+        style="margin-left: 100px; margin-right: 100px"
+      />
+      <!--End of Second Navbar -->
+
+      <!-- Third Navbar -->
+      <div class="container p-2 text-center">
+        <div class="row">
+          <div
+            class="col"
+            style="cursor: pointer"
+            onclick="getProductsByCategory('electronics')"
+          >
+            <a href="seeall.html" style="color: black; text-decoration: none">
+              Electronics
+            </a>
+          </div>
+          <div
+            class="col"
+            style="cursor: pointer"
+            onclick="getProductsByCategory('jewelery')"
+          >
+            <a href="seeall.html" style="color: black; text-decoration: none">
+              Jewelery
+            </a>
+          </div>
+          <div
+            class="col"
+            style="cursor: pointer"
+            onclick="getProductsByCategory(`men's clothing`)"
+          >
+            <a href="seeall.html" style="color: black; text-decoration: none">
+              Men's clothes
+            </a>
+          </div>
+          <div class="col" style="cursor: pointer">
+            <a href="seeall.html" style="color: black; text-decoration: none">
+              Women's clothes
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="div-divider pt-0 pb-0 mt-0 mb-0"
+        style="margin-left: 100px; margin-right: 100px"
+      />
+      <!--End of second Navbar -->
+    </header>
+
+    <div class="results container p-3">
+      <h3>Please choose an element</h3>
+      <div class="row">
+        <ul id="searchResults" class="m-3"></ul>
+      </div>
+    </div>
+
+    <footer
+      class="text-center"
+      style="
+        margin: 0px;
+        padding: 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.175);
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              Copyright © 1995-2023 eBay Inc. All Rights Reserved.
+              Accessibility, User Agreement, Privacy, Payments Terms of Use,
+              Cookies, Your Privacy Choices and AdChoice
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/all.min.js"></script>
+    <script src="search.html"></script>
+    <script>
+      //search apperance products
+      const searchResults =
+        JSON.parse(localStorage.getItem("searchResults")) || [];
+      const searchResultsList = document.getElementById("searchResults");
+
+      searchResults.forEach((result) => {
+        const li = document.createElement("li");
+        li.textContent = result.title;
+
+        const resultImg = document.createElement("img");
+        resultImg.src = result.image;
+        resultImg.alt = result.title;
+        resultImg.classList.add("img-fluid"); // Use Bootstrap class to make the image responsive
+        resultImg.style.width = "200px";
+        resultImg.style.height = "200px";
+
+        li.classList.add("col-sm-4");
+        //li.className = "list-item";
+        li.addEventListener("click", function () {
+          localStorage.setItem("selectedProduct", JSON.stringify(result));
+          window.location.href = "product.html";
+        });
+        li.appendChild(resultImg);
+        searchResultsList.appendChild(li);
+      });
+    </script>
+  </body>
+</html>

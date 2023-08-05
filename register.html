@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!--font awesome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,200;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/signRegister.css" />
+
+  <title>Register</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/ebay.png" alt="" />
+      </a>
+      <span class="signInLink">Already a member?
+        <a class="action-link" href="signin.html" target="">Sign in</a></span>
+    </div>
+  </nav>
+
+  <div class="header d-flex justify-content-center align-items-center mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1 style="font-weight: bold">Create an account</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="signReg d-flex justify-content-center align-items-center">
+    <div class="container">
+      <form return>
+        <div class="row">
+          <div class="formInp col-md-6 col-xs-12 mt-4">
+            <div class="col-xs-12">
+              <div class="row">
+                <div class="mb-3 text-center">
+                  <input type="text" placeholder=" First name" class="nameInp" id="regFname" />
+                  <input type="text" placeholder=" Last name" class="nameInp" id="regLname" />
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 mb-3 text-center">
+              <input type="email" placeholder=" Email" class="regInp" id="regMail" />
+            </div>
+            <div class="col-xs-12 text-center">
+              <input type="password" placeholder=" Password" class="regInp" id="regPass" />
+            </div>
+            <div class="col-xs-12 pCreate">
+              <p>
+                By Creating an account, you agree to our User<br />
+                Agreement and acknowledge reading our User<br />
+                Privacy Notice .
+              </p>
+            </div>
+            <input type="submit" class="btn btnCreate rounded-pill btn-fluid main-btn mt-4" href="#"
+              onclick="registerUser()">
+          </div>
+
+          <div class="btns col-md-6 col-xs-12 mt-5 text-center">
+            <div class="col-xs-12">
+              <a class="btn btnSign rounded-pill btn-fluid main-btn mt-4 p-2" href="https://accounts.google.com/"><img
+                  src="images/google.png" alt="" width="25px" style="float: left; margin-left: 10px" />
+                Continue with Google</a>
+            </div>
+            <div class="col-xs-12">
+              <a class="btn btn-primary btnFace rounded-pill btn-fluid main-btn mt-4 p-2"
+                href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"
+                  style="float: left; margin-left: 10px"></i>
+                Continue with Facebook</a>
+            </div>
+
+            <div class="col-xs-12">
+              <a class="btn btnSign rounded-pill btn-fluid main-btn mt-4 p-2" href="https://appleid.apple.com"><i
+                  class="fab fa-apple fa-2x" style="float: left; margin-left: 10px; margin-top: -4px;"></i>Continue with
+                Apple</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer text-center pt-5 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            Copyright © 1995-2023 eBay Inc. All Rights Reserved.
+            Accessibility, User Agreement, Privacy, Payments Terms of Use,
+            Cookies, Your Privacy Choices and AdChoice
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/register.js"></script>
+
+</body>
+
+</html>
